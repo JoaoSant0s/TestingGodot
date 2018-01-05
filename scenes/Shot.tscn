@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=1]
+
+[ext_resource path="res://scripts/Shot.gd" type="Script" id=1]
+[ext_resource path="res://sprites/shot.png" type="Texture" id=2]
+
+[node name="Shot" type="Node2D"]
+
+transform/pos = Vector2( 0, -24 )
+script/script = ExtResource( 1 )
+velocity = 500
+
+[node name="sprite" type="Sprite" parent="."]
+
+texture = ExtResource( 2 )
+
+

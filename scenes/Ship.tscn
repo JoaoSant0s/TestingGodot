@@ -8,10 +8,16 @@
 transform/pos = Vector2( 514.923, 528.87 )
 z/relative = false
 script/script = ExtResource( 1 )
+characterNumber = 0
 velocity = 200
+color = null
 
 [node name="sprite" type="Sprite" parent="."]
 
 texture = ExtResource( 2 )
+
+[node name="cannonOrigin" type="Position2D" parent="."]
+
+transform/pos = Vector2( 1.03717, -57.3485 )
 
 

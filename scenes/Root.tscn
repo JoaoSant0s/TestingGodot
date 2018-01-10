@@ -6,6 +6,13 @@
 
 [node name="ship" parent="." instance=ExtResource( 1 )]
 
-transform/pos = Vector2( 517.378, 634.456 )
+transform/pos = Vector2( 804.829, 628.274 )
+color = Color( 1, 0, 0, 1 )
+
+[node name="Ship" parent="." instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 196.563, 624.687 )
+characterNumber = 1
+color = Color( 0, 1, 0.179688, 1 )
 
 

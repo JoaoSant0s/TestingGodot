@@ -20,4 +20,12 @@ texture = ExtResource( 2 )
 
 transform/pos = Vector2( 1.03717, -57.3485 )
 
+[node name="cannonOriginL" type="Position2D" parent="."]
+
+transform/pos = Vector2( 1.03717, -57.3485 )
+
+[node name="cannonOriginR" type="Position2D" parent="."]
+
+transform/pos = Vector2( 1.03717, -57.3485 )
+
 

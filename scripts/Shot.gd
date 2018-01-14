@@ -1,6 +1,7 @@
-extends Node2D
+extends Area2D
 
 export var velocity = 500
+export var damage = 50
 var sprite
 var spriteSize
 
@@ -16,3 +17,12 @@ func _process(delta):
 	if get_pos().y  < - (spriteSize.y / 2):
 		free()
 		pass
+
+func _on_area_enter(collider):	
+	if collider.is_in_group(Constants.ENEMY_GROUP):
+		if collider.has_method(Constants.ENEMY_GROUP_TAKE_DAMAGE):
+			collider.take_damage(damage)
+		
+		queue_free()
+	
+	pass

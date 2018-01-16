@@ -2,10 +2,12 @@ extends Area2D
 
 export var velocity = 200
 export var life = 100
+export var damage = 10
 var rand_rotation
 
 var sprite
 var spriteSize
+var isDead
 
 func _ready():
 	add_to_group(Constants.ENEMY_GROUP)
@@ -32,10 +34,13 @@ func _process(delta):
 	pass
 
 func take_damage(damage):
+	if isDead: return
+
 	life -= damage
 	get_node("anim").play("hit")
 	get_node("anim").queue("idle")
 
 	if life <= 0:
+		isDead = true
 		queue_free()
 	pass

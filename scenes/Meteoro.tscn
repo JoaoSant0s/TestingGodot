@@ -22,7 +22,7 @@ tracks/0/keys = {
 "times": FloatArray( 0, 0.3 ),
 "transitions": FloatArray( 1, 1 ),
 "update": 0,
-"values": [ Color( 1, 0.46875, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+"values": [ Color( 1, 0, 0, 1 ), Color( 1, 0.560784, 0, 1 ) ]
 }
 
 [sub_resource type="Animation" id=3]
@@ -39,7 +39,7 @@ tracks/0/keys = {
 "times": FloatArray( 0 ),
 "transitions": FloatArray( 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 1 ) ]
+"values": [ Color( 1, 0.5625, 0, 1 ) ]
 }
 
 [node name="Meteoro" type="Area2D"]
@@ -55,11 +55,13 @@ angular_damp = 1.0
 script/script = ExtResource( 1 )
 velocity = 150
 life = 100
+damage = 10
 
 [node name="sprite" type="Sprite" parent="."]
 
 transform/scale = Vector2( 2, 2 )
 texture = ExtResource( 2 )
+modulate = Color( 1, 0, 0, 1 )
 
 [node name="collider" type="CollisionPolygon2D" parent="."]
 

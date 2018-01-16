@@ -22,7 +22,6 @@ func _on_area_enter(collider):
 	if collider.is_in_group(Constants.ENEMY_GROUP):
 		if collider.has_method(Constants.ENEMY_GROUP_TAKE_DAMAGE):
 			collider.take_damage(damage)
-		
 		queue_free()
 	
 	pass
